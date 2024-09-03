@@ -1,0 +1,4 @@
+Get started with Google Cloud training by completing this learning path that introduces you to the fundamentals of Google Cloud.
+This learning path guides you through a curated collection of on-demand courses, labs, and skill badges that provide you with real-world, hands-on experience in Google Cloud.
+
+Once you complete the path, check out our catalog for 700+ labs and courses to keep going on your professional journey.

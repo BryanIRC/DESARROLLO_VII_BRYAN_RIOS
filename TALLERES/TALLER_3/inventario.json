@@ -1,0 +1,242 @@
+[
+    {
+        "nombre": "Laptop HP Pavilion",
+        "precio": 899.99,
+        "cantidad": 10
+    },
+    {
+        "nombre": "Smartphone Samsung Galaxy S20",
+        "precio": 1099.99,
+        "cantidad": 15
+    },
+    {
+        "nombre": "Tablet Apple iPad Pro",
+        "precio": 1299.99,
+        "cantidad": 8
+    },
+    {
+        "nombre": "Monitor Dell UltraSharp 27\"",
+        "precio": 349.99,
+        "cantidad": 20
+    },
+    {
+        "nombre": "Impresora HP LaserJet Pro",
+        "precio": 299.99,
+        "cantidad": 12
+    },
+    {
+        "nombre": "Teclado mecánico Razer BlackWidow",
+        "precio": 149.99,
+        "cantidad": 18
+    },
+    {
+        "nombre": "Mouse Logitech MX Master 3",
+        "precio": 99.99,
+        "cantidad": 25
+    },
+    {
+        "nombre": "Altavoces Bose SoundLink Revolve",
+        "precio": 199.99,
+        "cantidad": 14
+    },
+    {
+        "nombre": "Cámara Canon EOS Rebel T7i",
+        "precio": 749.99,
+        "cantidad": 6
+    },
+    {
+        "nombre": "Auriculares Sony WH-1000XM4",
+        "precio": 349.99,
+        "cantidad": 22
+    },
+    {
+        "nombre": "SSD Samsung 1TB",
+        "precio": 179.99,
+        "cantidad": 30
+    },
+    {
+        "nombre": "Router ASUS RT-AC88U",
+        "precio": 249.99,
+        "cantidad": 11
+    },
+    {
+        "nombre": "Smartwatch Apple Watch Series 6",
+        "precio": 399.99,
+        "cantidad": 17
+    },
+    {
+        "nombre": "Robot aspirador Roomba i7+",
+        "precio": 699.99,
+        "cantidad": 9
+    },
+    {
+        "nombre": "Drone DJI Mavic Air 2",
+        "precio": 799.99,
+        "cantidad": 7
+    },
+    {
+        "nombre": "Proyector Epson Home Cinema 5050UB",
+        "precio": 2499.99,
+        "cantidad": 3
+    },
+    {
+        "nombre": "Tarjeta gráfica NVIDIA GeForce RTX 3080",
+        "precio": 699.99,
+        "cantidad": 5
+    },
+    {
+        "nombre": "Micrófono Blue Yeti X",
+        "precio": 169.99,
+        "cantidad": 16
+    },
+    {
+        "nombre": "Disco duro externo WD Elements 4TB",
+        "precio": 119.99,
+        "cantidad": 13
+    },
+    {
+        "nombre": "Adaptador Thunderbolt 3",
+        "precio": 49.99,
+        "cantidad": 28
+    },
+    {
+        "nombre": "Memoria RAM Corsair Vengeance LPX 16GB",
+        "precio": 79.99,
+        "cantidad": 24
+    },
+    {
+        "nombre": "Base de carga inalámbrica Belkin",
+        "precio": 29.99,
+        "cantidad": 35
+    },
+    {
+        "nombre": "Hub USB-C Satechi Pro",
+        "precio": 89.99,
+        "cantidad": 19
+    },
+    {
+        "nombre": "Kit de realidad virtual Oculus Quest 2",
+        "precio": 299.99,
+        "cantidad": 21
+    },
+    {
+        "nombre": "Monitor gaming MSI Optix MAG272CQR",
+        "precio": 399.99,
+        "cantidad": 23
+    },
+    {
+        "nombre": "Teclado Logitech G Pro X",
+        "precio": 129.99,
+        "cantidad": 26
+    },
+    {
+        "nombre": "Silla gaming DXRacer",
+        "precio": 349.99,
+        "cantidad": 31
+    },
+    {
+        "nombre": "Cargador portátil Anker PowerCore 20000",
+        "precio": 49.99,
+        "cantidad": 27
+    },
+    {
+        "nombre": "Estación de trabajo Lenovo ThinkStation P620",
+        "precio": 2999.99,
+        "cantidad": 2
+    },
+    {
+        "nombre": "Router mesh Google Nest Wifi",
+        "precio": 169.99,
+        "cantidad": 29
+    },
+    {
+        "nombre": "Altavoces inteligentes Amazon Echo Studio",
+        "precio": 199.99,
+        "cantidad": 32
+    },
+    {
+        "nombre": "Impresora 3D Creality Ender 3",
+        "precio": 249.99,
+        "cantidad": 33
+    },
+    {
+        "nombre": "Cámara de seguridad Arlo Pro 3",
+        "precio": 299.99,
+        "cantidad": 34
+    },
+    {
+        "nombre": "Memoria USB SanDisk 128GB",
+        "precio": 24.99,
+        "cantidad": 36
+    },
+    {
+        "nombre": "Repetidor Wi-Fi TP-Link AC750",
+        "precio": 29.99,
+        "cantidad": 37
+    },
+    {
+        "nombre": "Monitor LG UltraGear 34GN850-B",
+        "precio": 999.99,
+        "cantidad": 38
+    },
+    {
+        "nombre": "Portátil gaming ASUS ROG Zephyrus G14",
+        "precio": 1499.99,
+        "cantidad": 39
+    },
+    {
+        "nombre": "Teclado mecánico Corsair K95 RGB Platinum",
+        "precio": 179.99,
+        "cantidad": 40
+    },
+    {
+        "nombre": "Micrófono Rode NT-USB Mini",
+        "precio": 99.99,
+        "cantidad": 41
+    },
+    {
+        "nombre": "Cámara deportiva GoPro Hero 9 Black",
+        "precio": 449.99,
+        "cantidad": 42
+    },
+    {
+        "nombre": "Router gaming TP-Link Archer AX11000",
+        "precio": 299.99,
+        "cantidad": 43
+    },
+    {
+        "nombre": "Altavoces JBL Flip 5",
+        "precio": 119.99,
+        "cantidad": 44
+    },
+    {
+        "nombre": "Auriculares gaming SteelSeries Arctis 7",
+        "precio": 149.99,
+        "cantidad": 45
+    },
+    {
+        "nombre": "Impresora multifunción Brother MFC-L2750DW",
+        "precio": 199.99,
+        "cantidad": 46
+    },
+    {
+        "nombre": "Monitor portátil ASUS ZenScreen MB16AC",
+        "precio": 249.99,
+        "cantidad": 47
+    },
+    {
+        "nombre": "SSD externo Samsung T7 1TB",
+        "precio": 179.99,
+        "cantidad": 48
+    },
+    {
+        "nombre": "Teclado inalámbrico Apple Magic Keyboard",
+        "precio": 129.99,
+        "cantidad": 49
+    },
+    {
+        "nombre": "Base de carga para Nintendo Switch",
+        "precio": 39.99,
+        "cantidad": 50
+    }
+]
