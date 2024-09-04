@@ -11,6 +11,9 @@ function contar_vocales($texto)
 }
 function invertir_palabras($texto)
 {
+    $array_txt = explode(" ", $texto);
     $nuevoTexto = "";
-    return $nuevoTexto;
+    for ($i = count($array_txt) - 1; $i >= 0; $i--)
+        $nuevoTexto .= $array_txt[$i] . " ";
+    return trim($nuevoTexto);
 }
