@@ -18,6 +18,7 @@
         echo "<tr><td>Frase: </td><td>$frase</td></tr>";
         echo "<tr><td>Numero de palabras </td><td>" . contar_palabras($frase) . "</td></tr>";
         echo "<tr><td>La frase invertida </td><td>" . invertir_palabras($frase) . "</td></tr>";
+        echo "<tr><td>Numero de vocales </td><td>" . contar_vocales($frase) . "</td></tr>";
         echo "</table><br>";
     ?>
     <?php
