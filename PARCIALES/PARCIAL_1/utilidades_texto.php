@@ -6,6 +6,7 @@ function contar_palabras($texto)
 }
 function contar_vocales($texto)
 {
+
     $nVocales = 0;
     return $nVocales;
 }

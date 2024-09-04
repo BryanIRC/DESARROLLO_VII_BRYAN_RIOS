@@ -1,9 +1,28 @@
-<?php
-include "utilidades_texto.php";
+<!DOCTYPE html>
+<html lang="en">
 
-$frases = ["Created to create", "Si hay que arrojar la toalla que sea en la playa", "Draco dormiens nunquam titilandus"];
-foreach ($frases as $frase) {
-    echo "Frase: $frase<br>";
-    echo "Contiene " . contar_palabras($frase) . " palabras<br>";
-    echo "La frase invertida es: " . invertir_palabras($frase) . "<br><br>";
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>PARCIAL 1</title>
+</head>
+
+<body>
+    <?php
+    include "utilidades_texto.php";
+    $frases = ["Created to create", "Si hay que arrojar la toalla que sea en la playa", "Draco dormiens nunquam titilandus"];
+    foreach ($frases as $frase) {
+
+        echo "<table>";
+        echo "<tr><td>Frase: </td><td>$frase</td></tr>";
+        echo "<tr><td>Numero de palabras </td><td>" . contar_palabras($frase) . "</td></tr>";
+        echo "<tr><td>La frase invertida </td><td>" . invertir_palabras($frase) . "</td></tr>";
+        echo "</table><br>";
+    ?>
+    <?php
+    }
+    ?>
+</body>
+
+</html>
