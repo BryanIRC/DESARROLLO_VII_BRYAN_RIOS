@@ -7,8 +7,11 @@ function contar_palabras($texto)
 function contar_vocales($texto)
 {
     $nVocales = 0;
-    if (strpos($texto, "a"))
-        $nVocales++;
+    $array_txt = str_split($texto);
+    $vocales = ["a", "e", "i", "o", "u"];
+    foreach ($array_txt as $caracter)
+        if (in_array($caracter, $vocales))
+            $nVocales++;
     return $nVocales;
 }
 function invertir_palabras($texto)
