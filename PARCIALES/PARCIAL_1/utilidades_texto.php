@@ -7,7 +7,7 @@ function contar_palabras($texto)
 function contar_vocales($texto)
 {
     $nVocales = 0;
-    if (strpos("a", $texto))
+    if (strpos($texto, "a"))
         $nVocales++;
     return $nVocales;
 }
