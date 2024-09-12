@@ -51,4 +51,4 @@ class Libro
 // Ejemplo de uso
 $miLibro = new Libro("  El Quijote  ", "Miguel de Cervantes", "1605");
 echo $miLibro->obtenerInformacion();
-echo "\nTítulo: " . $miLibro->getTitulo();
+echo "<br>Título: " . $miLibro->getTitulo();
