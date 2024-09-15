@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php include 'Empresa.php';
+?>
 
 <head>
     <meta charset="UTF-8">
@@ -16,6 +18,11 @@
         include 'includes-taller4/header.php'
         ?>
         <main>
+            <?php
+            $objEmpresa = new Empresa();
+            $objEmpresa->agregarDesarrollador("Bryan Rios", 61, 2500.00, "PHP", "Senior", 0.00);
+            $objEmpresa->obtenerDesarrollador();
+            ?>
         </main>
         <?php
         include 'includes-taller4/footer.php'

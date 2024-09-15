@@ -54,21 +54,28 @@ header {
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    flex: 1;
-}
-
-
-td {
-    border: white 1px solid;
-    border-collapse: collapse;
-    padding: 3px;
+    justify-content: center;
 }
 
 table {
-    margin: 15px 3px;
+    margin-top: 5px;
     border-collapse: collapse;
-    width: 45%;
+    width: 80%;
+}
+
+td,
+th {
+    border: white 1px solid;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+th {
+    text-align: center;
+}
+
+tr {
+    font-size: 14px;
 }
 
 footer {
@@ -94,6 +101,11 @@ footer {
         padding: 10px 15px;
         display: flex;
         flex-direction: column;
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 10px;
     }
 }
 

@@ -41,12 +41,16 @@ class Desarrollador extends Empleado implements Evaluable
         return $this->bono;
     }
 
-    public function evaluarDesempenio()
+    public function evaluarDesempenio($criterio)
     {
         return "Evaluando desarrollador en " . $this->lenguaje . " a nivel " . $this->nivel;
     }
     public function obtenerInformacion()
     {
-        return parent::obtenerInformacion() . "<br>Lenguaje: {$this->lenguaje}, Nivel: {$this->nivel}, Bono: '$'{$this->bono}";
+        echo parent::obtenerInformacion() .
+            "
+        <td>{$this->getLenguaje()}</td>
+        <td>{$this->getNivel()}</td>
+        <td>{$this->getBono()}</td></tr></table>";
     }
 }

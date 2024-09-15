@@ -1,5 +1,5 @@
 <?php
 interface Evaluable
 {
-    public function evaluarDesempenio();
+    public function evaluarDesempenio($criterio);
 }

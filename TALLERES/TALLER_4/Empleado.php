@@ -45,10 +45,20 @@ class Empleado
         return $this->salarioBase;
     }
 
-
-    //Funcion para verificar
     public function obtenerInformacion()
     {
-        return "Nombre: {$this->getNombre()} ID: {$this->getId()} Salario Base: {$this->getSalarioBase()}";
+        echo "<table>
+        <tr>
+            <th scope=col>Npmbre</th>
+            <th scope=col>ID</th>
+            <th scope=col>Salario Base</th>
+            <th scope=col>Lenguaje</th>
+            <th scope=col>Nivel</th>
+            <th scope=col>Bono Asignado</th>
+        </tr>
+        <tr>
+        <td>{$this->getNombre()}</td>
+        <td>{$this->getId()}</td>
+        <td>{$this->getSalarioBase()}</td>";
     }
 }
