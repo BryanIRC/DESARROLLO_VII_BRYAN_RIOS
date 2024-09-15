@@ -1,4 +1,5 @@
 <?php
+
 class Empleado
 {
     public $nombre;
@@ -11,21 +12,6 @@ class Empleado
         $this->setNombre($nombre);
         $this->setId($id);
         $this->setSalarioBase($salarioBase);
-    }
-    //Mestodos GET
-    public function getNombre()
-    {
-        return $this->nombre;
-    }
-
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    public function getSalarioBase()
-    {
-        return $this->salarioBase;
     }
     //Metodos SET
     public function setNombre($nombre)
@@ -43,6 +29,22 @@ class Empleado
     {
         $this->salarioBase = doubleval($salarioBase);
     }
+    //Mestodos GET
+    public function getNombre()
+    {
+        return $this->nombre;
+    }
+
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    public function getSalarioBase()
+    {
+        return $this->salarioBase;
+    }
+
 
     //Funcion para verificar
     public function obtenerInformacion()
