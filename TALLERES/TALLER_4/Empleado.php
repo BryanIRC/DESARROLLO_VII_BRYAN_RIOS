@@ -1,5 +1,4 @@
 <?php
-
 class Empleado
 {
     public $nombre;
@@ -43,22 +42,5 @@ class Empleado
     public function getSalarioBase()
     {
         return $this->salarioBase;
-    }
-
-    public function obtenerInformacion()
-    {
-        echo "<table>
-        <tr>
-            <th scope=col>Npmbre</th>
-            <th scope=col>ID</th>
-            <th scope=col>Salario Base</th>
-            <th scope=col>Lenguaje</th>
-            <th scope=col>Nivel</th>
-            <th scope=col>Bono Asignado</th>
-        </tr>
-        <tr>
-        <td>{$this->getNombre()}</td>
-        <td>{$this->getId()}</td>
-        <td>{$this->getSalarioBase()}</td>";
     }
 }

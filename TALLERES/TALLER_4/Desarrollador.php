@@ -1,6 +1,7 @@
 <?php
 require_once 'Empleado.php';
 require_once 'Evaluable.php';
+
 class Desarrollador extends Empleado implements Evaluable
 {
     private $lenguaje;
@@ -40,17 +41,25 @@ class Desarrollador extends Empleado implements Evaluable
     {
         return $this->bono;
     }
-
-    public function evaluarDesempenio($criterio)
+    public function evaluarDesempenio($porc_Individual)
     {
-        return "Evaluando desarrollador en " . $this->lenguaje . " a nivel " . $this->nivel;
-    }
-    public function obtenerInformacion()
-    {
-        echo parent::obtenerInformacion() .
-            "
-        <td>{$this->getLenguaje()}</td>
-        <td>{$this->getNivel()}</td>
-        <td>{$this->getBono()}</td></tr></table>";
+        echo "Se evalúa el Desarrollador";
+        switch (true) {
+            case ($porc_Individual > 100):
+                $evaluacion = "Superó las Expectativas";
+                break;
+            case ($porc_Individual >= 95):
+                $evaluacion = "Excelente";
+                break;
+            case ($porc_Individual >= 90):
+                $evaluacion = "Buena";
+                break;
+            case ($porc_Individual >= 80):
+                $evaluacion = "Regular";
+                break;
+            default:
+                $evaluacion = "No cumpló";
+        }
+        return $evaluacion;
     }
 }

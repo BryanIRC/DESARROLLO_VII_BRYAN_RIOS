@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include 'Empresa.php';
+<?php
+require_once 'Empresa.php';
 ?>
 
 <head>
@@ -19,9 +20,18 @@
         ?>
         <main>
             <?php
+            $objArchivo = new Archivo();
             $objEmpresa = new Empresa();
-            $objEmpresa->agregarDesarrollador("Bryan Rios", 61, 2500.00, "PHP", "Senior", 0.00);
-            $objEmpresa->obtenerDesarrollador();
+            echo "Se agrega un desarrollador<br>";
+            $empleado = $objEmpresa->agregarDesarrollador("Bryan Rios", "ASQW234", 2500.00, "PHP", "Senior", 0.00);
+            echo "<br>Desempeño del Desarrollador: " . $objEmpresa->evaluarEmpleado(85) . "<br>";
+            echo "Se agrega un Gerente<br>";
+            $empleado = $objEmpresa->agregarGerente("Nayrb Soir", "qwrety", 3500.00, "Operaciones");
+            echo "<br>Desempeño del Gerente: " . $objEmpresa->evaluarEmpleado([85, 95, 90, 115, 91]) . "<br>";
+            echo "Se listan los Empleados <br>";
+            $objEmpresa->ListarEmpleados();
+            echo "<br>Nomina total: " . $objEmpresa->CalcularNomina() . "<br>";
+            echo "<br>Bono Correspondiente: " . $objEmpresa->CalcularBono(85) . "<br><br>";
             ?>
         </main>
         <?php
