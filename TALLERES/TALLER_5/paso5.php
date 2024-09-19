@@ -83,7 +83,18 @@ $jsonVentas =
     {"producto_id": 1,"cliente_id": 103,"cantidad": 2,"fecha": "2024-09-12"},
     {"producto_id": 3,"cliente_id": 101,"cantidad": 1,"fecha": "2024-09-13"},
     {"producto_id": 4,"cliente_id": 102,"cantidad": 2,"fecha": "2024-09-14"},
-    {"producto_id": 5,"cliente_id": 103,"cantidad": 1,"fecha": "2024-09-15"}]';
+    {"producto_id": 5,"cliente_id": 103,"cantidad": 1,"fecha": "2024-09-15"},
+    {"producto_id": 2,"cliente_id": 102,"cantidad": 2,"fecha": "2024-09-02"},
+    {"producto_id": 3,"cliente_id": 103,"cantidad": 1,"fecha": "2024-09-03"},
+    {"producto_id": 4,"cliente_id": 101,"cantidad": 1,"fecha": "2024-09-04"},
+    {"producto_id": 5,"cliente_id": 102,"cantidad": 3,"fecha": "2024-09-05"},
+    {"producto_id": 1,"cliente_id": 103,"cantidad": 1,"fecha": "2024-09-06"},
+    {"producto_id": 3,"cliente_id": 101,"cantidad": 2,"fecha": "2024-09-07"},
+    {"producto_id": 2,"cliente_id": 102,"cantidad": 1,"fecha": "2024-09-08"},
+    {"producto_id": 4,"cliente_id": 103,"cantidad": 1,"fecha": "2024-09-09"},
+    {"producto_id": 5,"cliente_id": 101,"cantidad": 1,"fecha": "2024-09-10"},
+    {"producto_id": 2,"cliente_id": 102,"cantidad": 1,"fecha": "2024-09-11"}
+    ]';
 
 $ventasData = json_decode($jsonVentas, true);
 
