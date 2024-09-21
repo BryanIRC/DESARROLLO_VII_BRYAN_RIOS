@@ -70,7 +70,6 @@ $tiendaData['productos'][] = $nuevoProducto;
 // 8. Convertir el arreglo actualizado de vuelta a JSON
 $jsonActualizado = json_encode($tiendaData, JSON_PRETTY_PRINT);
 echo "<br>Datos actualizados de la tienda (JSON):<br>$jsonActualizado<br>";
-
 // TAREA: Implementa una función que genere un resumen de ventas
 // Crea un arreglo de ventas (producto_id, cliente_id, cantidad, fecha)
 // y genera un informe que muestre:
