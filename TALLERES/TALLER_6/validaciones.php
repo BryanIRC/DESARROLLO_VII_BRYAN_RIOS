@@ -9,9 +9,10 @@ function validarEmail($email)
     return filter_var($email, FILTER_VALIDATE_EMAIL);
 }
 
-function validarEdad($edad)
+function validarFechaNacimiento($fechaNacimiento)
 {
-    return is_numeric($edad) && $edad >= 18 && $edad <= 120;
+    $tiempo = date_diff($fechaNacimiento, date_create(date('Y-m-d')));
+    ($tiempo->y >= 18 && $tiempo->y <= 120) ? $tiempo->y : FALSE;
 }
 
 function validarSitioWeb($sitioWeb)
