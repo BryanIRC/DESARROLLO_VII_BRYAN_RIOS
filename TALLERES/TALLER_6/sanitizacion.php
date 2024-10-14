@@ -1,17 +1,21 @@
 <?php
 function sanitizarNombre($nombre)
 {
-    return filter_var(trim($nombre), FILTER_SANITIZE_STRING);
+    trim($nombre);
+    htmlspecialchars($nombre);
+    return $nombre;
 }
 
 function sanitizarEmail($email)
 {
-    return filter_var(trim($email), FILTER_SANITIZE_EMAIL);
+    htmlspecialchars($email);
+    return trim($email);
 }
 
-function sanitizarEdad($edad)
+function sanitizarFechaNacimiento($fecha)
 {
-    return filter_var($edad, FILTER_SANITIZE_NUMBER_INT);
+    htmlspecialchars($fecha);
+    return trim($fecha);
 }
 
 function sanitizarSitioWeb($sitioWeb)
@@ -21,13 +25,15 @@ function sanitizarSitioWeb($sitioWeb)
 
 function sanitizarGenero($genero)
 {
-    return filter_var(trim($genero), FILTER_SANITIZE_STRING);
+    htmlspecialchars($genero);
+    return trim($genero);
 }
 
 function sanitizarIntereses($intereses)
 {
     return array_map(function ($interes) {
-        return filter_var(trim($interes), FILTER_SANITIZE_STRING);
+        htmlspecialchars($interes);
+        return trim($interes);
     }, $intereses);
 }
 

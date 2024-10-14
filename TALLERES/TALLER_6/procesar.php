@@ -7,18 +7,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $datos = [];
 
     // Procesar y validar cada campo
-    $campos = ['nombre', 'email', 'edad', 'sitio_web', 'genero', 'intereses', 'comentarios'];
+    $campos = ['nombre', 'email', 'fechaNacimiento', 'edad', 'sitioWeb', 'genero', 'intereses', 'comentarios'];
     foreach ($campos as $campo) {
-        if (isset($_POST[$campo])) {
+        if (isset($_POST[$campo]) && $campo != 'edad') {
             $valor = $_POST[$campo];
             $valorSanitizado = call_user_func("sanitizar" . ucfirst($campo), $valor);
             $datos[$campo] = $valorSanitizado;
 
-            if (!call_user_func("validar" . ucfirst($campo), $valorSanitizado)) {
+            if (!call_user_func("validar" . ucfirst($campo), $valorSanitizado))
                 $errores[] = "El campo $campo no es válido.";
-            }
         }
     }
+    //Agregar edad al array
+    $datos['edad'] = validarFechaNacimiento($_POST['fechaNacimiento']);
 
     // Procesar la foto de perfil
     if (isset($_FILES['foto_perfil']) && $_FILES['foto_perfil']['error'] !== UPLOAD_ERR_NO_FILE) {
@@ -34,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // Modificar la sección de mostrar resultados
+    //Mostrar resultados
     if (empty($errores)) {
         echo "<h2>Datos Recibidos:</h2>";
         echo "<table border='1'>";

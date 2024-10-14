@@ -11,8 +11,8 @@ function validarEmail($email)
 
 function validarFechaNacimiento($fechaNacimiento)
 {
-    $tiempo = date_diff($fechaNacimiento, date_create(date('Y-m-d')));
-    ($tiempo->y >= 18 && $tiempo->y <= 120) ? $tiempo->y : FALSE;
+    $tiempo = date_diff(new DateTime($fechaNacimiento), new DateTime());
+    return ($tiempo->y >= 18 && $tiempo->y <= 120) ? $tiempo->y : FALSE;
 }
 
 function validarSitioWeb($sitioWeb)
