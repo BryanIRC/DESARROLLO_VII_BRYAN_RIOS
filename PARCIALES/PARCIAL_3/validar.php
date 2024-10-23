@@ -1,6 +1,8 @@
 <?php
 $credenciales = [
-    ["usuario" => "bryan", "contrasena" => "qwe123", "rol" => "estudiante"],
+    ["usuario" => "bryan", "contrasena" => "qwe123", "rol" => "estudiante", "id" => "e1"],
+    ["usuario" => "bryan", "contrasena" => "qwe123", "rol" => "estudiante", "id" => "e2"],
+    ["usuario" => "bryan", "contrasena" => "qwe123", "rol" => "estudiante", "id" => "e3"],
     ["usuario" => "profe", "contrasena" => "zxc456", "rol" => "profesor"]
 ];
 
